@@ -36,8 +36,11 @@ h2 {
   padding: 0;
 }
 
-.hero {
+.container {
   background-color: var(--dark-color);
+}
+
+.hero {
   margin: 0 auto;
   text-align: center;
   padding: 160px 0;
@@ -50,7 +53,7 @@ h2 {
   padding: 0;
 }
 
-.round-gradient {
+.button-gradient {
   background: var(--gradient);
   border-radius: 90px;
   padding: 50px 20px;
@@ -58,4 +61,73 @@ h2 {
   color: var(--light-color);
   font-weight: 500;
   margin-top: 90px;
+}
+
+.link-gradient {
+  background-color: var(--primary-color);
+  background-image: var(--gradient);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+.projects {
+  border-top: 1px solid var(--light-color);
+  padding: 50px 60px;
+}
+
+.projects h2 {
+  font-size: 64px;
+}
+
+.projects p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.project-description {
+  padding: 120px 0;
+}
+
+footer {
+  padding: 160px 0;
+}
+
+@media (max-width: 960px) {
+  .hero {
+    padding: 80px 0;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero h2 {
+    line-height: 1;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 1;
+  }
+
+  .projects h2 {
+    font-size: 18px;
+  }
+
+  .projects {
+    padding: 50px 0;
+  }
+
+  .project-description {
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  .projects h2 {
+    font-size: 44px;
+  }
 }

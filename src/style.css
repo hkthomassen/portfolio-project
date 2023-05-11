@@ -40,6 +40,45 @@ h2 {
   background-color: var(--dark-color);
 }
 
+nav {
+  background-color: var(--dark-color);
+  padding: 20px 0 0 0;
+  border-bottom: 1px solid var(--light-color);
+}
+
+nav .logo {
+  margin-left: 20px;
+}
+nav ul {
+  padding: 0;
+  margin-right: 20px;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  margin-left: 20px;
+}
+
+nav a {
+  color: var(--light-color);
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+nav a:hover,
+nav li.active a {
+  background-color: var(--gradient);
+  background-image: var(--gradient);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
 .hero {
   margin: 0 auto;
   text-align: center;
@@ -130,6 +169,8 @@ footer .github-link a {
 }
 
 @media (max-width: 960px) {
+
+  }
   .hero {
     padding: 80px 0;
   }

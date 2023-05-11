@@ -1,8 +1,61 @@
+:root {
+  --primary-color: rgb(233, 22, 22);
+  --secondary-color: rgb(255, 128, 134);
+  --tertiary-color: rgb(194, 95, 255);
+  --light-color: #ffffff;
+  --dark-color: #131313;
+  --gradient: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--tertiary-color)
+  );
+}
+
+body {
+  background: var(--gradient);
+  color: var(--light-color);
+  font-family: "Manrope", sans-serif;
+}
+
 h1 {
   font-family: "Manrope", sans-serif;
+  font-size: 96px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
   font-family: "Cormorant Garamond", serif;
   font-style: italic;
+  font-size: 36px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  background-color: var(--dark-color);
+  margin: 0 auto;
+  text-align: center;
+  padding: 160px 0;
+}
+
+.hero p {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.round-gradient {
+  background: var(--gradient);
+  border-radius: 90px;
+  padding: 50px 20px;
+  text-decoration: none;
+  color: var(--light-color);
+  font-weight: 500;
+  margin-top: 90px;
 }

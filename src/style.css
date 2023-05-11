@@ -100,7 +100,7 @@ h2 {
 }
 
 footer {
-  padding: 160px 0;
+  padding: 160px 0 30px;
 }
 
 footer .social-links a {
@@ -117,6 +117,16 @@ footer .social-links a {
 footer .social-links a:hover {
   background-color: var(--light-color);
   color: var(--primary-color);
+}
+
+footer .github-link {
+  text-align: center;
+  margin-top: 100px;
+  opacity: 50%;
+}
+
+footer .github-link a {
+  color: var(--light-color);
 }
 
 @media (max-width: 960px) {

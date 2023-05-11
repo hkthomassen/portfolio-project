@@ -55,7 +55,7 @@ h2 {
 
 .button-gradient {
   background: var(--gradient);
-  border-radius: 90px;
+  border-radius: 50%;
   padding: 50px 20px;
   text-decoration: none;
   color: var(--light-color);
@@ -64,7 +64,7 @@ h2 {
 }
 
 .link-gradient {
-  background-color: var(--primary-color);
+  background-color: var(--gradient);
   background-image: var(--gradient);
   background-size: 100%;
   -webkit-background-clip: text;
@@ -72,6 +72,13 @@ h2 {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   font-weight: 600;
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+}
+
+.link-gradient:hover {
+  background-color: var(--light-color);
+  background-image: var(--light-color);
 }
 
 .projects {
@@ -94,6 +101,22 @@ h2 {
 
 footer {
   padding: 160px 0;
+}
+
+footer .social-links a {
+  text-align: center;
+  color: var(--light-color);
+  margin: 0 20px;
+  background-color: var(--primary-color);
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  background-color: var(--light-color);
+  color: var(--primary-color);
 }
 
 @media (max-width: 960px) {
@@ -129,5 +152,9 @@ footer {
 
   .projects h2 {
     font-size: 44px;
+  }
+
+  footer {
+    padding: 60px 0;
   }
 }

@@ -84,7 +84,6 @@ nav li.active a {
   font-weight: bold;
   margin: 0;
   padding: 0;
-  opacity: 100%;
 }
 
 .hero h1 {
@@ -100,7 +99,6 @@ nav li.active a {
   font-family: "Cormorant Garamond", serif;
   font-style: italic;
   font-size: 36px;
-  line-height: 1;
   margin: 0;
   padding: 0;
 }
@@ -108,12 +106,14 @@ nav li.active a {
 .content-container {
   margin: 0 auto;
   border-top: 1px solid var(--light-color);
-  padding: 50px 60px 0px;
+  padding: 75px 60px 25px;
 }
 
 .content-container h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 36px;
+  margin-bottom: 30px;
 }
 
 .content-container p {
@@ -189,16 +189,22 @@ footer .github-link a {
     font-size: 16px;
   }
 
-  .hero h2 {
-    line-height: 1;
-  }
-
   .hero h1 {
     font-size: 48px;
     line-height: 1;
+    margin: 20px 0;
+  }
+
+  .hero h2 {
+    font-size: 24px;
   }
 
   footer {
     padding: 60px 0;
+  }
+
+  .content-container {
+    padding: 75px 10px 25px;
+    text-align: center;
   }
 }

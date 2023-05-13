@@ -10,10 +10,22 @@
     var(--secondary-color),
     var(--tertiary-color)
   );
+  --gradient-bg: linear-gradient(
+    to top,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--tertiary-color)
+  );
+  --gradient-btn: radial-gradient(
+    circle at 12.3% 19.3%,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--tertiary-color)
+  );
 }
 
 body {
-  background: var(--gradient);
+  background: var(--gradient-bg);
   color: var(--light-color);
   font-family: "Manrope", sans-serif;
 }
@@ -100,7 +112,7 @@ nav li.active a {
 }
 
 .button-gradient {
-  background: var(--gradient);
+  background: var(--gradient-btn);
   border-radius: 50%;
   padding: 50px 33px;
   text-decoration: none;

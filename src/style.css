@@ -96,6 +96,7 @@ nav li.active a {
   font-weight: bold;
   margin: 0;
   padding: 0;
+  opacity: 100%;
 }
 
 .button-gradient {
@@ -175,25 +176,30 @@ footer .github-link a {
   color: var(--light-color);
 }
 
-.about-section,
-.work-section {
+.content-container {
   margin: 0 auto;
   padding: 160px 60px;
 }
 
-.about-section h1,
-.work-section h1 {
+.content-container h1 {
   font-size: 64px;
   line-height: 1;
+  margin-bottom: 20px;
 }
 
-.about-section h2 {
+.content-container h2 {
   font-size: 24px;
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
-.about-content {
+.content {
   margin: 30px 30px 0 0;
+}
+
+.frontend {
+  background-color: var(--light-color);
+  width: 100%;
+  color: var(--dark-color);
 }
 
 @media (max-width: 960px) {

@@ -30,30 +30,6 @@ body {
   font-family: "Manrope", sans-serif;
 }
 
-h1 {
-  font-family: "Manrope", sans-serif;
-  font-size: 96px;
-  font-weight: 300;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
-}
-
-h2 {
-  font-family: "Cormorant Garamond", serif;
-  font-style: italic;
-  font-size: 36px;
-  line-height: 1;
-  margin: 0;
-  padding: 0;
-}
-
-p {
-  font-size: 16px;
-  line-height: 1.5;
-  opacity: 75%;
-}
-
 .container {
   background-color: var(--dark-color);
 }
@@ -111,6 +87,41 @@ nav li.active a {
   opacity: 100%;
 }
 
+.hero h1 {
+  font-family: "Manrope", sans-serif;
+  font-size: 96px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.hero h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 36px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.content-container {
+  margin: 0 auto;
+  border-top: 1px solid var(--light-color);
+  padding: 50px 60px 0px;
+}
+
+.content-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.content-container p {
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 75%;
+}
+
 .button-gradient {
   background: var(--gradient-btn);
   border-radius: 50%;
@@ -118,44 +129,7 @@ nav li.active a {
   text-decoration: none;
   color: var(--light-color);
   font-weight: 500;
-  margin-top: 90px;
-}
-
-.link-gradient {
-  background-color: var(--gradient);
-  background-image: var(--gradient);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 100ms ease-in-out;
-}
-
-.link-gradient:hover {
-  background-color: var(--light-color);
-  background-image: var(--light-color);
-}
-
-.projects {
-  border-top: 1px solid var(--light-color);
-  padding: 50px 60px;
-  border-bottom: 1px solid var(--light-color);
-}
-
-.projects h2 {
-  font-size: 64px;
-}
-
-.projects p {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.project-description {
-  padding: 120px 0;
+  margin: 80px 0 0;
 }
 
 footer {
@@ -188,30 +162,22 @@ footer .github-link a {
   color: var(--light-color);
 }
 
-.content-container {
-  margin: 0 auto;
-  padding: 160px 60px;
+.link-gradient {
+  background-color: var(--gradient);
+  background-image: var(--gradient);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
 }
 
-.content-container h1 {
-  font-size: 64px;
-  line-height: 1;
-  margin-bottom: 20px;
-}
-
-.content-container h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.content {
-  margin: 30px 30px 0 0;
-}
-
-.frontend {
+.link-gradient:hover {
   background-color: var(--light-color);
-  width: 100%;
-  color: var(--dark-color);
+  background-image: var(--light-color);
 }
 
 @media (max-width: 960px) {
@@ -227,34 +193,12 @@ footer .github-link a {
     line-height: 1;
   }
 
-  h1 {
+  .hero h1 {
     font-size: 48px;
     line-height: 1;
   }
 
-  .projects h2 {
-    font-size: 18px;
-  }
-
-  .projects {
-    padding: 50px 0;
-  }
-
-  .project-description {
-    text-align: center;
-    padding: 30px 0;
-  }
-
-  .projects h2 {
-    font-size: 44px;
-  }
-
   footer {
     padding: 60px 0;
-  }
-
-  .about-section {
-    text-align: center;
-    padding: 30px 10px;
   }
 }

@@ -34,7 +34,8 @@ nav a {
   letter-spacing: 0.5px;
 }
 
-nav a:hover {
+nav a:hover,
+.active {
   color: var(--primary-color);
 }
 

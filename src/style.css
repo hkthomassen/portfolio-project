@@ -78,7 +78,7 @@ nav a:hover {
   font-family: "Cormorant Garamond", serif;
   font-style: italic;
   font-size: 36px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .content-container p {
@@ -88,42 +88,37 @@ nav a:hover {
 }
 
 footer {
-  background-color: var(--secondary-color);
-  padding: 80px 0 30px;
+  padding: 50px 0 160px;
   text-align: center;
 }
 
 footer a {
-  color: var(--dark-color);
+  color: var(--primary-color);
   font-weight: 700;
 }
 
 footer .social-links a {
-  color: var(--primary-color);
+  color: var(--light-color);
   margin: 0 20px;
-  background-color: var(--dark-color);
+  background-color: var(--primary-color);
   padding: 10px 15px;
   border-radius: 50%;
   font-size: 18px;
-  transition: all 100ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  border: 1px solid var(--primary-color);
 }
 
 footer .social-links a:hover {
-  background-color: var(--primary-color);
-  color: var(--dark-color);
-}
-
-footer .github-link {
-  margin-top: 100px;
-  opacity: 50%;
-}
-
-footer .github-link a {
-  color: var(--dark-color);
+  background-color: var(--light-color);
+  color: var(--primary-color);
 }
 
 .light-bg {
   background-color: var(--secondary-color);
+}
+
+.white-bg {
+  background-color: var(--light-color);
 }
 
 .primary-button,
@@ -134,23 +129,29 @@ footer .github-link a {
   text-decoration: none;
   color: var(--dark-color);
   font-weight: 700;
+  transition: all 150ms ease-in-out;
 }
 
 .primary-button {
   background-color: var(--primary-color);
+  color: var(--light-color);
 }
 
 .primary-button:hover {
-  background-color: var(--dark-color);
+  border: 1px solid var(--primary-color);
+  background-color: var(--light-color);
   color: var(--primary-color);
 }
 
 .secondary-button {
   border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  background-color: var(--light-color);
 }
 
 .secondary-button:hover {
-  color: var(--dark-color);
+  background-color: var(--primary-color);
+  color: var(--light-color);
 }
 
 @media (max-width: 1024px) {
@@ -177,7 +178,7 @@ footer .github-link a {
   }
 
   .content-container {
-    padding: 75px 10px 25px;
+    padding: 25px 10px;
     text-align: center;
   }
 }

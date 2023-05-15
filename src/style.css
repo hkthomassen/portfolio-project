@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #d8a598;
-  --secondary-color: #f6f2ec;
+  --primary-color: #c29cb3;
+  --secondary-color: #f5f4f5;
   --light-color: #ffffff;
-  --dark-color: #464220;
+  --dark-color: #234940;
 }
 
 body {
@@ -100,7 +100,7 @@ footer {
 }
 
 footer a {
-  color: var(--primary-color);
+  color: var(--dark-color);
   font-weight: 700;
 }
 

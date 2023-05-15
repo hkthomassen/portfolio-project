@@ -88,6 +88,12 @@ nav a:hover,
   opacity: 75%;
 }
 
+.newest-projects,
+.projects,
+.project-links {
+  margin: 50px auto;
+}
+
 footer {
   padding: 50px 0 40px;
   text-align: center;
@@ -185,8 +191,24 @@ footer .social-links a:hover {
     font-size: 24px;
   }
 
+  .newest-projects {
+    margin: 20px auto;
+  }
+
+  .projects {
+    margin: 0px auto;
+  }
+
+  .project-links {
+    margin: 30px auto;
+  }
+
+  .project-description {
+    margin: auto 10px;
+  }
+
   footer {
-    padding: 60px 0;
+    padding: 60px 20px;
   }
 
   .content-container {

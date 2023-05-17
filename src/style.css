@@ -172,9 +172,15 @@ footer .social-links a:hover {
   font-weight: normal;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   nav {
     justify-content: space-between !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  nav {
+    justify-content: center !important;
   }
 
   .hero {
